@@ -10,7 +10,7 @@ body{
 }
 .container{
     background-color: aliceblue;
-    max-width: 64rem;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 50px;
