@@ -26,7 +26,7 @@ body{
 }
 .picture{
     width: 75%;
-    max-width: 75;
+    max-width: 75%;
     border-radius: 30%;
     align-items: center;
     border: 3px solid rgb(0, 195, 255);
@@ -127,12 +127,42 @@ ul{
     margin-bottom: 2vh;
 }
 
+@media(max-width: 766px) {
+    *{
+        font-size: 0.99em;
+    }
 
-@media(max-width: 500px) {
+}
+
+@media(max-width: 638px) {
+    .picture{
+        max-width: 50%;
+
+    }
     .container {
-        padding: 0 30px 30px;
         padding: 0;
         margin: 0;
         grid-template-columns: 1fr;
     }
+    *{
+        font-size: 1em;
+    }
+    .profiletext h2{
+        font-size: 1.2em;
+    }
 }
+
+@media(max-width: 374px) {
+    .container .leftside, .container .rightside{
+        padding: 10px;
+    }
+
+    *{
+        font-size: 0.99em;
+    }
+
+    .profiletext h2{
+        font-size: 1.2em;
+    }
+}
+
