@@ -1,163 +1,193 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-body{
+body {
     font-family: 'Roboto Mono', monospace;
     display: grid;
     background-color: rgb(150, 150, 150);
     color: rgb(226, 226, 226);
     justify-content: center;
 }
-.container{
+
+.container {
     background-color: aliceblue;
     max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 50px;
     box-shadow: 0 0 5px black;
+    /* ÄLSKAR SHADOW <3 */
 }
-.container .leftside{
+
+.container .leftside {
     background-color: rgb(45, 45, 45);
     padding: 40px;
 }
-.container .rightside{
+
+.container .rightside {
     background-color: aliceblue;
     padding: 40px;
 }
-.picture{
+
+.picture {
     max-width: 75%;
     width: 100%;
     border-radius: 30%;
     align-items: center;
     border: 3px solid rgb(0, 195, 255);
-    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0)); /* SÅ JÄKLA SNYGGT MED SHADOW <3 */
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+    /* SÅ JÄKLA SNYGGT MED SHADOW <3 */
 }
-.profiletext{
+
+.profiletext {
     text-align: center;
     border-bottom: 1px solid;
     text-transform: uppercase;
     margin-bottom: 10%;
 }
-.profiletext h2 span{
+
+.profiletext h2 span {
     font-size: 0.8em;
     font-weight: 300;
 }
-.contact{
+
+.contact {
     color: rgb(226, 226, 226);
     margin-bottom: 10%;
 }
-ul{
+
+ul {
     color: rgb(150, 150, 150);
     padding-left: 0;
     list-style: none;
 }
-.contact li{
+
+.contact li {
     margin: 10px 0;
 }
-.contact a{
+
+.contact a {
     color: rgb(150, 150, 150);
 }
-.contact a:hover{
+
+.contact a:hover {
     color: rgb(226, 226, 226);
 }
-.contact i{
+
+.contact i {
     width: 30px;
     font-size: 18px;
     color: rgb(0, 195, 255);
 }
-.competence{
+
+.competence {
     border-top: 1px solid;
 }
-.competence ul{
+
+.competence ul {
     margin: 0;
 }
-.competence h4{
+
+.competence h4 {
     color: rgb(0, 195, 255);
     margin-top: 10px;
     margin-bottom: 5px
 }
-.competence h5{
+
+.competence h5 {
     color: rgb(226, 226, 226);
     font-size: 90%;
     margin-top: 5px;
     margin-bottom: 15px;
 }
-.rightside{
+
+.rightside {
     color: rgba(32, 32, 32, 0.8);
 }
-.rightside p{
+
+.rightside p {
     margin-bottom: 4vh;
 }
-.rightside h2{
+
+.rightside h2 {
     padding-bottom: 16px;
     border-bottom: 2px solid;
-    border-spacing: 10px, 10px;
     border-color: rgb(185, 183, 183);
     text-transform: uppercase;
 }
-.worklife .content{
+
+.worklife .content {
     display: grid;
     flex-direction: row;
     grid-template-columns: 1fr 2fr;
     column-gap: 0;
 }
-.worklife .content .desc{
+
+.worklife .content .desc {
     font-size: 0.85em;
     color: rgb(150, 150, 150);
 }
-.education p{
+
+.education p {
     margin-bottom: 2vh;
 }
-.text h5{
+
+.text h5 {
     margin-bottom: 0;
     margin-top: 1.6vh;
     font-size: 0.9em;
 }
-.text p{
+
+.text p {
     margin-top: 0.5vh;
     margin-bottom: 2vh;
 }
 
 @media(max-width: 766px) {
-    *{
+    * {
         font-size: 0.99em;
     }
 
 }
 
 @media(max-width: 638px) {
-    .picture{
+    .picture {
         max-width: 50%;
 
     }
+
     .container {
         padding: 0;
         margin: 0;
         grid-template-columns: 1fr;
     }
-    *{
+
+    * {
         font-size: 1em;
     }
-    .profiletext h2{
+
+    .profiletext h2 {
         font-size: 1.6em;
     }
 }
 
 @media(max-width: 374px) {
-    .container .leftside, .container .rightside{
+
+    .container .leftside,
+    .container .rightside {
         padding: 10px;
     }
 
-    *{
+    * {
         font-size: 0.99em;
     }
 
-    .profiletext h2{
+    .profiletext h2 {
         font-size: 1.4em;
     }
 }
 
-@media print{
-    .container{
+@media print {
+    .container {
         margin: 0;
     }
 
